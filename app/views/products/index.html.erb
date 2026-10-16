@@ -1,0 +1,13 @@
+<h1>投稿一覧</h1>
+
+<%= link_to "新規投稿", products_new_path %>
+
+<% @products.each do |product| %>
+    <div>
+     <p>タイトル: <%= product.title %></p>
+     <p>内容: <%= product.content %></p>
+    </div>
+
+    <hr>
+
+<% end %>
